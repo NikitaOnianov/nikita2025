@@ -8,23 +8,21 @@
         xmlns:vm="using:Demo_Nikita.Models">
   <ScrollViewer>
 	  <StackPanel>
-		  <TextBlock Text="Список пользователей" HorizontalAlignment="Center"/>
+		  <TextBlock Text="Список заказов" HorizontalAlignment="Center"/>
 		  <Border
           Background="red"
-          Padding="2">
+          Padding="2"
+          Height="300">
               
-			  <ListBox Name="ListUsers">
+			  <ListBox Name="ListUsersProd">
 				  <ListBox.ItemTemplate>
-					  <DataTemplate DataType="vm:User">
+					  <DataTemplate DataType="vm:UserProd">
 						  <StackPanel Orientation="Horizontal">
-							  <TextBlock Text="{Binding UserName}"/>
+							  <TextBlock Text="{Binding UserProductUser}"/>
                               <TextBlock Text=" "/>
-                              <TextBlock Text="{Binding UserLogin}"/>
+                              <TextBlock Text="{Binding UserProductProduct}"/>
                               <TextBlock Text=" "/>
-                              <TextBlock Text="{Binding UserPassword}"/>
-                              <TextBlock Text=" "/>
-                              <TextBlock Text="{Binding UserAddress}"/>
-                              <TextBlock Text=" "/>
+                              <TextBlock Text="{Binding UserProductPrice}"/>
                           </StackPanel>
                       </DataTemplate>
                   </ListBox.ItemTemplate>

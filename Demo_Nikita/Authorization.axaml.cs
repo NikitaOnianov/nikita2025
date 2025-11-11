@@ -43,7 +43,8 @@ public partial class Authorization : Window
                         }
                         else
                         {
-                            
+                            new Buyer().Show();
+                            Close();
                         }
                     }
                     else

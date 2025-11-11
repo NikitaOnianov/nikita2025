@@ -25,7 +25,6 @@
                               <TextBlock Text="{Binding UserPassword}"/>
                               <TextBlock Text=" "/>
                               <TextBlock Text="{Binding UserAddress}"/>
-                              <TextBlock Text=" "/>
                           </StackPanel>
                       </DataTemplate>
                   </ListBox.ItemTemplate>

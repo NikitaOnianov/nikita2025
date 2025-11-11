@@ -33,7 +33,7 @@ public partial class AddUser : Window
                         UserAddress = adres.Text,
                         UserInn = inn.Text,
                         UserLogin = log.Text,
-                        UserName = adres.Text,
+                        UserName = name.Text,
                         UserPassword = pas.Text,
                         UserType = (ListType.SelectedItem as UserType).UserTypeId,
                         UserPhone = phone.Text,

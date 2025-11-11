@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|c:\\users\\demo\\desktop\\nikita\\demo_nikita\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|c:\\users\\demo\\desktop\\nikita\\demo_nikita\\adduser.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|solutionrelative:adduser.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|c:\\users\\demo\\desktop\\nikita\\demo_nikita\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|c:\\users\\demo\\desktop\\nikita\\demo_nikita\\adduser.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|solutionrelative:adduser.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|c:\\users\\demo\\desktop\\nikita\\demo_nikita\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44D8EF54-E3F4-46E6-ADA0-8A3A0F224227}|Demo_Nikita.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\MainWindow.axaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\MainWindow.axaml.cs",
-              "RelativeToolTip": "MainWindow.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T06:42:03.813Z",
+              "DocumentIndex": 0,
+              "Title": "AddUser.axaml",
+              "DocumentMoniker": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\AddUser.axaml",
+              "RelativeDocumentMoniker": "AddUser.axaml",
+              "ToolTip": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\AddUser.axaml",
+              "RelativeToolTip": "AddUser.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-11T12:17:39.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\MainWindow.axaml",
-              "RelativeDocumentMoniker": "MainWindow.axaml",
-              "ToolTip": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\MainWindow.axaml",
-              "RelativeToolTip": "MainWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-10T06:37:06.489Z",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T12:04:44.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddUser.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\AddUser.axaml.cs",
+              "RelativeDocumentMoniker": "AddUser.axaml.cs",
+              "ToolTip": "C:\\Users\\demo\\Desktop\\Nikita\\Demo_Nikita\\AddUser.axaml.cs",
+              "RelativeToolTip": "AddUser.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T12:02:32.955Z",
               "EditorCaption": ""
             }
           ]

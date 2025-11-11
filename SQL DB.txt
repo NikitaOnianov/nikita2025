@@ -1,0 +1,91 @@
+-- DROP SCHEMA public;
+
+CREATE SCHEMA public AUTHORIZATION pg_database_owner;
+
+-- DROP SEQUENCE products_product_id_seq;
+
+CREATE SEQUENCE products_product_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE products_unit_products_unit_id_seq;
+
+CREATE SEQUENCE products_unit_products_unit_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE user_product_user_product_id_seq;
+
+CREATE SEQUENCE user_product_user_product_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE user_type_user_type_id_seq;
+
+CREATE SEQUENCE user_type_user_type_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE users_user_id_seq;
+
+CREATE SEQUENCE users_user_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;-- public.products_unit определение
+
+-- Drop table
+
+-- DROP TABLE products_unit;
+
+CREATE TABLE products_unit ( products_unit_id int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL, products_unit_name varchar NOT NULL, CONSTRAINT products_unit_pk PRIMARY KEY (products_unit_id));
+
+
+-- public.user_type определение
+
+-- Drop table
+
+-- DROP TABLE user_type;
+
+CREATE TABLE user_type ( user_type_id int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL, user_type_name varchar NOT NULL, CONSTRAINT user_type_pk PRIMARY KEY (user_type_id));
+
+
+-- public.products определение
+
+-- Drop table
+
+-- DROP TABLE products;
+
+CREATE TABLE products ( product_id int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL, product_name varchar NOT NULL, product_unit int4 NULL, product_quantity float4 NULL, product_price float4 NULL, CONSTRAINT products_pk PRIMARY KEY (product_id), CONSTRAINT products_products_unit_fk FOREIGN KEY (product_unit) REFERENCES products_unit(products_unit_id));
+
+
+-- public.users определение
+
+-- Drop table
+
+-- DROP TABLE users;
+
+CREATE TABLE users ( user_id int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL, user_type int4 NULL, user_login varchar NULL, user_password varchar NULL, user_address text NULL, user_inn varchar NULL, user_phone varchar NOT NULL, user_name varchar NULL, CONSTRAINT users_pk PRIMARY KEY (user_id), CONSTRAINT users_user_type_fk FOREIGN KEY (user_type) REFERENCES user_type(user_type_id));
+
+
+-- public.user_product определение
+
+-- Drop table
+
+-- DROP TABLE user_product;
+
+CREATE TABLE user_product ( user_product_id int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL, user_product_user int4 NULL, user_product_product int4 NULL, user_product_quantity int4 NULL, CONSTRAINT user_product_pk PRIMARY KEY (user_product_id), CONSTRAINT user_product_products_fk FOREIGN KEY (user_product_product) REFERENCES products(product_id), CONSTRAINT user_product_users_fk FOREIGN KEY (user_product_user) REFERENCES users(user_id));

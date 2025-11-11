@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Host=176.108.251.27;Port=5432;Username=userdb;Password=1234;Database=mydatabase" Npgsql.EntityFrameworkCore.PostgreSQL -o Models --schema proba
